@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" data-project="mcp-config-doctor">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f4f6f2">
+<meta name="description" content="Inspect MCP server configuration for risky commands, exposed credentials and permissive launch flags before you run it.">
+<meta property="og:title" content="MCP Config Doctor — AGENT INFRASTRUCTURE">
+<meta property="og:description" content="Inspect MCP server configuration for risky commands, exposed credentials and permissive launch flags before you run it.">
+<meta property="og:image" content="preview.svg">
+<title>MCP Config Doctor — AGENT INFRASTRUCTURE</title>
+<link rel="icon" href="preview.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script defer src="app.js"></script>
+</head>
+<body style="--accent:#72DDBB;--accent-ink:#10251D">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="topline"><div class="topline__inner"><span><i></i>Independent portfolio tool · AGENT INFRASTRUCTURE</span><span>LOCAL FIRST · NO API KEYS</span></div></div>
+<header class="site-header"><a class="brand" href="#top"><span class="brand-mark">MC</span><span>MCP Config Doctor<small>FIELD TOOLS / 2026</small></span></a><div class="header-actions"><span class="privacy-pill"><i class="privacy-dot"></i>Process in your browser</span><a class="source-link" href="https://github.com/ronaksoltani/mcp-config-doctor">View source ↗</a></div></header>
+<main class="main" id="main"><section class="hero" id="top"><div class="hero-copy"><span class="eyebrow">AGENT INFRASTRUCTURE / 01</span><h1>Know what an agent can reach.</h1><p>Inspect MCP server configuration for risky commands, exposed credentials and permissive launch flags before you run it.</p><div class="hero-tags"><span>Zero dependencies</span><span>Runs locally</span><span>MIT licensed</span></div></div><aside class="hero-stamp"><span>BUILT FOR</span><strong>Developers configuring local AI agents</strong><p>Small tool. Clear boundaries.</p><span class="stamp-mark">M</span></aside></section><section class="workspace" id="workspace"><div class="panel-grid"><section class="panel"><div class="panel-head"><div><span class="kicker">INPUT / MCP JSON</span><h2>Configuration</h2></div><button class="button button--quiet" id="sample">Load sample</button></div><label class="field"><span>Paste a client configuration</span><textarea id="input" class="mono" rows="18" spellcheck="false"></textarea></label><p class="field-note">The audit reads command names, arguments and environment key names. It never prints environment values.</p><div class="actions"><button class="button button--primary" id="run">Run local audit</button><button class="button" id="clear">Clear</button></div></section><section class="panel"><div class="panel-head"><div><span class="kicker">REPORT / REVIEW</span><h2>Findings</h2></div><span class="pill" id="score">Awaiting input</span></div><div id="summary" class="notice">Paste a configuration or load the sample to see a rule-by-rule review.</div><div id="results" class="results" aria-live="polite"></div></section></div></section><section class="notes" id="notes"><article><h2>Privacy by default</h2><p>Processing happens in this browser tab. This project makes no analytics, model, upload or application API requests. Refreshing the page clears the working session.</p></article><article><h2>Scope and limitations</h2><p>This is a static configuration review, not a sandbox or a guarantee of safety. It does not launch servers, contact MCP endpoints or send configuration anywhere. Sample names and values are fictional portfolio content.</p></article></section></main><footer><div class="footer-inner"><span>© 2026 Ronak Soltani · MIT License</span><span>MCP Config Doctor · A local-first developer tool</span></div></footer><div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
